@@ -4,7 +4,7 @@ USE bucketlist_db
 CREATE TABLE buckets
 (
 	id int NOT NULL AUTO_INCREMENT,
-	"" varchar(255) NOT NULL,
-	"" BOOLEAN DEFAULT false,
+	name varchar(255) NOT NULL,
+	done BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );

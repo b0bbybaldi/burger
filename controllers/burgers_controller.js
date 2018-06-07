@@ -16,9 +16,9 @@ router.get("/", function(req, res){
 
 router.post("api/buckets", function(req, res){
 	bucket.create([
-		" ", " "	
+		"name", "done"	
 		], [
-			req.body."", req.body.""
+			req.body.name, req.body.done
 		], function(result){
 			res.json({id: result.insertId});
 		});
