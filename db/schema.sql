@@ -1,5 +1,6 @@
+DROP DATABASE bucketlist_db;
 CREATE DATABASE bucketlist_db;
-USE bucketlist_db
+USE bucketlist_db;
 
 CREATE TABLE buckets
 (

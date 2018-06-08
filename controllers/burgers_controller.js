@@ -2,7 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
-var bucket = require("../models/burgers_controller.js");
+var bucket = require("../models/burger.js");
 
 router.get("/", function(req, res){
 	bucket.all(function(data){
@@ -30,7 +30,7 @@ router.put("api/buckets/id:", function(req, res){
 	console.log("condition", condition);
 
 	bucket.update({
-		"": req.body.""
+		done: req.body.done
 	}, condition, function(result){
 		if(result.changedRows == 0){
 			return res.status(404).end();
