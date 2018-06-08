@@ -14,7 +14,7 @@ router.get("/", function(req, res){
 	});
 });
 
-router.post("api/buckets", function(req, res){
+router.post("/api/buckets/", function(req, res){
 	bucket.create([
 		"name", "done"	
 		], [
@@ -24,7 +24,7 @@ router.post("api/buckets", function(req, res){
 		});
 });
 
-router.put("api/buckets/id:", function(req, res){
+router.put("/api/buckets/id:", function(req, res){
 	var condition = "id = " + req.params.id;
 
 	console.log("condition", condition);
