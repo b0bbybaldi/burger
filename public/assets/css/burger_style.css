@@ -1,7 +1,16 @@
+body {
+	background-image: "src=../img/background.jpg";
+}
+
 li {
-  padding: 5px;
+ /* padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: black;*/
+/*  opacity: 0.6;*/
+  color: gray;
+  font-weight: bold;
+  background-image: url("../img/bucket.png");
+  width: 75px;
 }
 
 .label {
@@ -11,7 +20,10 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: gray;
+  color:white;
+  font-weight: bold;
+  background-image: url("../img/bucket.png");
 }
 
 .form-group {

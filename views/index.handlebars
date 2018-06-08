@@ -5,6 +5,7 @@
 <ul>
   {{#each buckets}}
     {{#unless done}}
+      {{!-- <img src="../img/bucket.png" width="100px"> --}}
       {{> buckets/bucket-block done=true}}
     {{/unless}}
   {{/each}}
@@ -15,6 +16,7 @@
 <ul>
   {{#each buckets}}
     {{#if done}}
+      {{!-- <img src="../img/bucket.png" width="100px"> --}}
       {{> buckets/bucket-block done=false}}
     {{/if}}
   {{/each}}
