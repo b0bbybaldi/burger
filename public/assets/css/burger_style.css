@@ -1,17 +1,20 @@
 body {
-	background-image: "src=../img/background.jpg";
+  background: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1500px 900px;
 }
 
-li {
- /* padding: 5px;
+.buckets {
+  padding: 5px;
   margin: 5px;
-  background: black;*/
-/*  opacity: 0.6;*/
-  color: gray;
+  background: black;
+  opacity: 0.6;
+  color: lightgray;
   font-weight: bold;
-  background-image: url("../img/bucket.png");
-  width: 75px;
+  width: 400px;
+  font-size: 20px;
 }
+
 
 .label {
   font-weight: bold;
@@ -28,4 +31,12 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#bucketImg{
+	height: 50px;
+}
+
+.insideBtn{
+	font-size: 30px;
 }

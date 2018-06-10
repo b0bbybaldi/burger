@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-		<link rel="stylesheet" href="/assets/css/burger_style.css" type="text/css" />
-		<title>Roberto's Bucketlist!</title>
-		<script src="https://code.jquery.com/jquery.js"></script>
-</head>
-	<body>
-		{{{ body }}}
-	</body>
-			<script>
-		$(function () {
-			  $(".change-todo").on("click", function(event) {
+
+ $(".change-todo").on("click", function(event) {
 			  	event.preventDefault();
 
 			    var id = $(this).data("id");
-			    var newTodo = $(this).data("done");
+			    var newTodo = $(this).data("newtodo");
 
 			    var newTodoState = {
 			      done: newTodo
@@ -70,6 +58,3 @@
 			      }
 			    );
 			  });
-			});
-		</script>
-</html>

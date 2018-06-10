@@ -5,7 +5,6 @@
 <ul>
   {{#each buckets}}
     {{#unless done}}
-      {{!-- <img src="../img/bucket.png" width="100px"> --}}
       {{> buckets/bucket-block done=true}}
     {{/unless}}
   {{/each}}
@@ -16,13 +15,12 @@
 <ul>
   {{#each buckets}}
     {{#if done}}
-      {{!-- <img src="../img/bucket.png" width="100px"> --}}
       {{> buckets/bucket-block done=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a thing to do:</h2>
+<h2>Add a thing:</h2>
 <form class="create-form">
 
   <div class="form-group">
@@ -31,7 +29,7 @@
   </div>
 
   <div class="form-group">
-    <label for="done">Completed?</label><br>
+    <label for="done">Status?</label><br>
     <input type="radio" name="done" value="1" checked> Done!<br>
     <input type="radio" name="done" value="0"> To do
   </div>
