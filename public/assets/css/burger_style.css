@@ -6,7 +6,7 @@ body {
 
 h1{
   padding: 5px;
-  margin: 2px;
+  margin-left: 310px;
   background: black;
   opacity: 0.6;
   color: white;
@@ -15,35 +15,47 @@ h1{
   font-size: 30px;
   text-align: center;
   font-family: sans-serif;
-  display:flex;
+
   justify-content:center;
   align-items:center;
 }
 
 h2{
   padding: 5px;
-  margin: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   background: gray;
   opacity: 0.6;
   color: lightgray;
   font-weight: bold;
-  width: 600px;
+  width: 400px;
   font-size: 30px;
   text-align: center;
   font-family: sans-serif;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+}
+
+.achieved{
+	float:left;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.toachieve{
+	float:right;
+	margin-left: 60px;
+	margin-right: 60px;
 }
 
 .create-form{
   padding: 5px;
-  margin: 1px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 250px;
   background: gray;
   opacity: 0.6;
   color: lightgray;
   font-weight: bold;
-  width: 600px;
+  width: 900px;
   font-size: 20px;
   text-align: center;
   font-family: sans-serif;
@@ -54,8 +66,9 @@ h2{
 
 .buckets {
   padding: 5px;
-  margin: 1px;
   background: lightgray;
+  margin-bottom: 5px;
+  margin-top: 5px;
   opacity: 0.6;
   color: gray;
   font-weight: bold;
