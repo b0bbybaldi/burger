@@ -15,14 +15,14 @@
 			  	event.preventDefault();
 
 			    var id = $(this).data("id");
-			    var newTodo = $(this).data("done");
+			    var newTodo = $(this).data("newtodo");
 
 			    var newTodoState = {
-			      done: newTodo
+			      completed: newTodo
 			    };
 
 			    // Send the PUT request.
-			    $.ajax("/api/buckets" + id, {
+			    $.ajax("/api/buckets/" + id, {
 			      type: "PUT",
 			      data: newTodoState
 			    }).then(
@@ -40,7 +40,7 @@
 
 			    var newBucket = {
 			      name: $("#bucket").val().trim(),
-			      done: $("[name=done]:checked").val().trim()
+			      completed: $("[name=completed]:checked").val().trim()
 			    };
 
 			    // Send the POST request.

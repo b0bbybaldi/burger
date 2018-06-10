@@ -16,21 +16,21 @@ router.get("/", function(req, res){
 
 router.post("/api/buckets/", function(req, res){
 	bucket.create([
-		"name", "done"	
+		"name", "completed"	
 		], [
-			req.body.name, req.body.done
+			req.body.name, req.body.completed
 		], function(result){
 			res.json({id: result.insertId});
 		});
 });
 
-router.put("/api/buckets/id:", function(req, res){
+router.put("/api/buckets/:id", function(req, res){
 	var condition = "id = " + req.params.id;
 
 	console.log("condition", condition);
 
 	bucket.update({
-		done: req.body.done
+		completed: req.body.completed
 	}, condition, function(result){
 		if(result.changedRows == 0){
 			return res.status(404).end();
